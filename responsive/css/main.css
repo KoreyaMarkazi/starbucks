@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+}
+
+
+header {
+    width: 100%;
+    background: url("../imgs/bg.png");
+    background-size: 70%;
+    min-height: 100vh;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    gap: 32px;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    color: white;
+}
+
+.links li:nth-child(1) a{
+    color: black;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.hero_img img {
+    width: 340px;
+}
+
+.hero_info {
+    width: 520px;
+}
+
+.hero_info h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero_info p {
+    font-size: 28px;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.hero_info button {
+    padding: 15px 50px;
+    font-size: 20px;
+    background-color: #00704A;
+    color: white;
+    border: none;
+}
+
+.menu {
+    display: none;
+}
+
+.hero2{
+    display: none;
+}
+
+@media (max-width: 447px) {
+    .links {
+        display: none;
+    }
+
+    .menu img {
+        width: 30px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .container {
+        padding: 10px !important;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header {
+        background: url("../imgs/mobileBg.png") !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% !important;
+        background-position-y: bottom !important;
+        position: relative;
+    }
+
+    .hero_img {
+        display: none;
+    }
+
+    .hero_info {
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    .hero_info h2 {
+        font-size: 20px;
+    }
+
+    .hero_info p {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0px 20px;
+    }
+    
+    .hero_info button {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    .hero2{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 95%;
+    }
+}
